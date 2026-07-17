@@ -1,0 +1,23 @@
+<svg width="1200" height="50" viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5EC8F8"/>
+      <stop offset="35%" stop-color="#FFD166"/>
+      <stop offset="65%" stop-color="#FF9A3C"/>
+      <stop offset="100%" stop-color="#FF6F91"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="50" fill="#FFF8F0"/>
+  <path d="M0,30 Q300,4 600,30 T1200,30" fill="none" stroke="url(#arcGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <g>
+    <circle r="9" fill="#FF9A3C" stroke="#C9560B" stroke-width="1.4">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M0,30 Q300,4 600,30 T1200,30" rotate="auto"/>
+    </circle>
+  </g>
+
+  <g fill="#FF6F91" opacity="0.7">
+    <circle cx="90" cy="20" r="2.4"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="18" r="2.4"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.6s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>
