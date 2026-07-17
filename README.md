@@ -76,6 +76,7 @@ Fun Fact:
 # 🌸 Favorite Anime
 
 <p align="center">
+<img src="https://img.shields.io/badge/⭐_Dragon_Ball-FF9A3C?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Naruto-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/One_Piece-red?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Demon_Slayer-pink?style=for-the-badge"/>
