@@ -1,127 +1,118 @@
-<div align="center">
+<h1 align="center">
+🌸 ようこそ! I'm Navanitha Krishnan B 👋
+</h1>
 
-<img src="./assets/banner.svg" width="100%" alt="banner"/>
+<h3 align="center">
+⚡ AI & Machine Learning Engineer • Final-Year Student • Anime Enthusiast
+</h3>
 
-<br/>
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20&text=Welcome%20to%20My%20Profile&fontColor=ffffff&fontSize=38&fontAlignY=38"/>
+</p>
 
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Nunito&weight=700&size=18&duration=2600&pause=1200&color=FF6F3C&center=true&vCenter=true&width=680&lines=Hi+there!+Welcome+to+my+profile;AI%2FML+engineer+%E2%80%94+final+year;I+like+building+things+that+learn;Grab+a+snack%2C+let%27s+look+around" alt="typing"/>
+---
+
+# 🌸 About Me
+
+```yaml
+Name: Navanitha Krishnan B
+
+Education:
+   - B.E Artificial Intelligence & Machine Learning
+   - Final-year student @ KGiSL Institute of Technology
+
+Current Focus:
+   - AI / Machine Learning
+   - Full Stack Development
+   - Data Structures & Algorithms
+
+Fun Fact:
+   - Anime + Coding + Coffee = Productivity ☕
+```
+
+---
+
+# 🎌 What I'm About
+
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=26&pause=1000&color=FF6F3C&center=true&vCenter=true&width=800&lines=AI+%26+ML+Engineer;Anime+Lover;Full+Stack+Learner;Python+%7C+Flask+%7C+React;Building+Cool+Projects;Never+Stop+Learning+%E2%9C%A8"/>
+</p>
+
+---
+
+# ⚡ Tech Arsenal
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,cpp,java,html,css,js,react,flask,mysql,docker,git,github,linux,vscode"/>
+</p>
+
+---
+
+# 📊 GitHub Statistics
+
+<p align="center">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=navanithakrishnanb4-pixel&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=navanithakrishnanb4-pixel&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+# 🔥 GitHub Streak
+
+<p align="center">
+<img src="https://streak-stats.demolab.com?user=navanithakrishnanb4-pixel&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+# 🏆 GitHub Trophies
+
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=navanithakrishnanb4-pixel&theme=tokyonight&column=4&margin-w=15&margin-h=15"/>
+</p>
+
+---
+
+# 🌸 Favorite Anime
+
+<p align="center">
+<img src="https://img.shields.io/badge/Naruto-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/One_Piece-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Demon_Slayer-pink?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Jujutsu_Kaisen-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Attack_on_Titan-brown?style=for-the-badge"/>
+</p>
+
+---
+
+# 🌐 Connect With Me
+
+<p align="center">
+<a href="https://linkedin.com/in/navanitha-krishnan-329b77377">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
+<a href="mailto:[email protected]">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+<a href="https://github.com/navanithakrishnanb4-pixel">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+</p>
 
-<br/><br/>
+---
 
-<img src="https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-FF9A3C?style=for-the-badge&labelColor=FFF3E0"/>
-<img src="https://img.shields.io/badge/CLASS-AIML%20ENGINEER-5EC8F8?style=for-the-badge&labelColor=FFF3E0"/>
-<img src="https://img.shields.io/badge/MOOD-CURIOUS-FF6F91?style=for-the-badge&labelColor=FFF3E0"/>
+# 👀 Visitors
 
-</div>
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=navanithakrishnanb4-pixel&style=for-the-badge&color=ff6f3c"/>
+</p>
 
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
+---
 
-## 🌤️ A little about me
+<p align="center">
 
-I'm a final-year AI/ML student who likes turning messy real-world signals —
-photos, sensor readings, whatever's on hand — into something a computer can
-actually reason about. I enjoy the stretch between "this is just data" and
-"this is a working system," and I usually end up spending way too long on
-the small details that make a project feel finished.
+### ✨ Thanks for visiting my profile! ✨
 
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=gradient"/>
 
-## 🧰 What I build with
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,flask,react,mysql,docker,cpp,git,linux&theme=light" alt="skills"/>
-
-</div>
-
-<table align="center">
-<tr>
-<td valign="top" width="33%">
-
-**Modeling**
-- Computer vision (OpenCV, YOLOv8)
-- Model training & evaluation
-- Applied ML pipelines
-
-</td>
-<td valign="top" width="33%">
-
-**Systems**
-- Flask + React
-- MySQL, Docker
-- REST APIs, JWT auth
-
-</td>
-<td valign="top" width="33%">
-
-**Tooling**
-- Git & GitHub
-- Automated reporting (ReportLab)
-- Linux dev environments
-
-</td>
-</tr>
-</table>
-
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
-
-## 🌈 Something I've built
-
-<details open>
-<summary><b>🏗️ Construction Site Progress Monitor</b></summary>
-<br/>
-
-A full-stack system that compares site photos against blueprints to track
-construction progress automatically — my final-year engineering project.
-
-| | |
-|---|---|
-| **Computer vision** | OpenCV (SSIM image comparison), YOLOv8 object detection |
-| **Stack** | Flask, React, MySQL, Docker, JWT auth |
-| **Reporting** | Automated PDF generation with ReportLab |
-| **Design** | Custom "blueprint" dark-navy frontend system |
-| **Status** | ✅ Complete |
-
-</details>
-
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
-
-## 📊 GitHub, by the numbers
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=navanithakrishnanb4-pixel&show_icons=true&hide_border=true&bg_color=FFF8F0&title_color=FF6F3C&icon_color=5EC8F8&text_color=7A4A2E&ring_color=FF9A3C" height="165" alt="stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=navanithakrishnanb4-pixel&layout=compact&hide_border=true&bg_color=FFF8F0&title_color=FF6F3C&text_color=7A4A2E" height="165" alt="top langs"/>
-
-<br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=navanithakrishnanb4-pixel&hide_border=true&background=FFF8F0&ring=FF9A3C&fire=FF6F91&currStreakLabel=5EC8F8&sideLabels=7A4A2E&currStreakNum=7A4A2E&sideNums=7A4A2E&dates=7A4A2E" alt="streak"/>
-
-</div>
-
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
-
-## 🐍 What I've been up to
-
-<div align="center">
-
-<!-- switch on once the Snake Action workflow has run once on your repo -->
-<img src="https://raw.githubusercontent.com/navanithakrishnanb4-pixel/navanithakrishnanb4-pixel/snake-output/dist/snake.svg" alt="snake animation"/>
-
-</div>
-
-<img src="./assets/divider.svg" width="100%" alt="divider"/>
-
-## 💌 Say hi
-
-<div align="center">
-
-<a href="https://linkedin.com/in/navanitha-krishnan-329b77377"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-5EC8F8?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=FF6F3C"/></a>
-<a href="mailto:[email protected]"><img src="https://img.shields.io/badge/EMAIL-SAY%20HI-FF9A3C?style=for-the-badge&logo=gmail&logoColor=white&labelColor=FF6F3C"/></a>
-<a href="https://github.com/navanithakrishnanb4-pixel"><img src="https://img.shields.io/badge/GITHUB-FOLLOW-FF6F91?style=for-the-badge&logo=github&logoColor=white&labelColor=FF6F3C"/></a>
-
-</div>
-
-<img src="./assets/footer.svg" width="100%" alt="footer"/>
+</p>
