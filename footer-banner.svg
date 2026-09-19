@@ -1,0 +1,11 @@
+<svg width="900" height="110" viewBox="0 0 900 110" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="110" fill="#18130F"/>
+  <g stroke="#7FB2CE" stroke-width="1" opacity="0.28">
+    <line x1="0" y1="95" x2="260" y2="60"/>
+    <line x1="0" y1="80" x2="220" y2="48"/>
+    <line x1="0" y1="65" x2="180" y2="38"/>
+    <animate attributeName="opacity" values="0.18;0.35;0.18" dur="3.2s" repeatCount="indefinite"/>
+  </g>
+  <text x="450" y="50" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" letter-spacing="1" fill="#F2E8D8">TO BE CONTINUED</text>
+  <text x="450" y="78" text-anchor="middle" font-family="Courier New, monospace" font-size="13" letter-spacing="3" fill="#FF6E3F">VOL. 02 &#183; SOON</text>
+</svg>

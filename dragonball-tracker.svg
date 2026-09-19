@@ -1,0 +1,46 @@
+<svg width="620" height="90" viewBox="0 0 620 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ballg" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#FFE1A0"/>
+      <stop offset="55%" stop-color="#FF9A1E"/>
+      <stop offset="100%" stop-color="#D9660B"/>
+    </radialGradient>
+    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <text x="0" y="18" font-family="Courier New, monospace" font-size="13" font-weight="700" letter-spacing="2" fill="#6E6252">DRAGON BALL RADAR &#183; 7/7 COLLECTED</text>
+
+  <g transform="translate(0,34)">
+    <g filter="url(#softglow)">
+      <circle cx="30" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="0.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="120" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="0.35s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="210" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="1.05s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="390" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="480" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="1.75s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="570" cy="30" r="26" fill="url(#ballg)" stroke="#18130F" stroke-width="2">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="2.6s" begin="2.1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g font-family="Courier New, monospace" font-size="15" font-weight="700" fill="#5C2E00" text-anchor="middle">
+      <text x="30" y="35">1</text><text x="120" y="35">2</text><text x="210" y="35">3</text>
+      <text x="300" y="35">4</text><text x="390" y="35">5</text><text x="480" y="35">6</text>
+      <text x="570" y="35">7</text>
+    </g>
+  </g>
+</svg>
