@@ -1,119 +1,487 @@
-<h1 align="center">
-🌸 ようこそ! I'm Navanitha Krishnan B 👋
-</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Navanitha Krishnan B — AI & ML engineer, full-stack builder, anime enthusiast. Final-year student at KGiSL Institute of Technology." />
+<title>Navanitha Krishnan B · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#F2E8D8; --ink:#18130F; --panel:#FBF4E6; --line:#18130F;
+  --red:#D8481F; --teal:#1F4A63; --gold:#B87A1E; --muted:#6E6252;
+  --shadow: 4px 4px 0 var(--ink);
+  --radius: 2px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15110D; --ink:#F1E6D3; --panel:#1E1811; --line:#F1E6D3;
+    --red:#FF6E3F; --teal:#7FB2CE; --gold:#F0BE66; --muted:#B4A88F;
+    --shadow: 4px 4px 0 rgba(241,230,211,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15110D; --ink:#F1E6D3; --panel:#1E1811; --line:#F1E6D3;
+  --red:#FF6E3F; --teal:#7FB2CE; --gold:#F0BE66; --muted:#B4A88F;
+  --shadow: 4px 4px 0 rgba(241,230,211,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Manrope",system-ui,sans-serif; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+.wide-table, table, pre, code{overflow-x:auto}
+a{color:inherit}
+.mono{font-family:"JetBrains Mono",monospace}
+.display{font-family:"Anton",sans-serif; text-transform:uppercase; letter-spacing:.01em}
 
-<h3 align="center">
-⚡ AI & Machine Learning Engineer • Final-Year Student • Anime Enthusiast
-</h3>
+/* ---------- halftone texture ---------- */
+.halftone{
+  background-image: radial-gradient(var(--ink) 1.1px, transparent 1.3px);
+  background-size: 9px 9px;
+  opacity:.09;
+  position:absolute; inset:0; pointer-events:none;
+}
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20&text=Welcome%20to%20My%20Profile&fontColor=ffffff&fontSize=38&fontAlignY=38"/>
-</p>
+/* ---------- nav ---------- */
+.masthead{
+  position:sticky; top:0; z-index:40;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px clamp(18px,4vw,48px);
+  background:var(--paper);
+  border-bottom:2px solid var(--line);
+}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink)}
+.brand-mark{
+  width:34px; height:34px; display:grid; place-items:center;
+  border:2px solid var(--ink); transform:rotate(-6deg);
+  font:600 12px "JetBrains Mono",monospace;
+}
+.brand-name{font:700 14px "JetBrains Mono",monospace; letter-spacing:.02em}
+.chapters{display:flex; gap:2px; list-style:none; margin:0; padding:0}
+.chapters a{
+  display:block; padding:9px 12px; text-decoration:none; color:var(--muted);
+  font:600 11px "JetBrains Mono",monospace; letter-spacing:.03em; text-transform:uppercase;
+  border-bottom:2px solid transparent;
+}
+.chapters a:hover, .chapters a.is-current{ color:var(--ink); border-color:var(--red) }
+.menu-btn{ display:none; background:none; border:2px solid var(--ink); padding:8px 10px; cursor:pointer }
+.menu-btn span{ display:block; width:20px; height:2px; background:var(--ink); margin:4px 0 }
 
----
+/* ---------- section scaffolding ---------- */
+section{ padding: 84px clamp(18px,4vw,48px) 30px; scroll-margin-top:66px; position:relative; max-width:1180px; margin:0 auto }
+.tab{
+  display:inline-flex; align-items:center; gap:8px;
+  border:2px solid var(--ink); padding:6px 12px; margin-bottom:26px;
+  font:700 11px "JetBrains Mono",monospace; letter-spacing:.05em; text-transform:uppercase;
+  background:var(--panel);
+}
+.tab b{ color:var(--red) }
+h1,h2,h3{ margin:0 0 16px }
+.section-title{ font-size:clamp(34px,5.6vw,58px); line-height:.94; max-width:820px; margin-bottom:26px }
+.section-title .accent{ color:var(--red) }
+p.lede{ max-width:600px; color:var(--muted); font-size:15px }
 
-# 🌸 About Me
+/* ---------- cover / hero ---------- */
+#cover{
+  padding-top:0; max-width:none; min-height:min(92vh,900px);
+  display:flex; align-items:center;
+  background:#14100C; color:#F2E8D8; overflow:hidden;
+}
+#cover .inner{ width:100%; max-width:1180px; margin:0 auto; padding:0 clamp(18px,4vw,48px); position:relative; z-index:2 }
+.speedlines{ position:absolute; inset:0; z-index:1; opacity:.5 }
+.cover-kicker{ font:700 12px "JetBrains Mono",monospace; letter-spacing:.15em; text-transform:uppercase; color:#FF6E3F; margin-bottom:18px; display:flex; align-items:center; gap:10px }
+.cover-kicker::before{ content:""; width:26px; height:2px; background:#FF6E3F }
+.cover-title{ font-size:clamp(54px,10.5vw,150px); line-height:.86; margin:0 0 22px; }
+.cover-title span{ display:block }
+.cover-sub{ max-width:520px; color:#D8CBB2; font-size:16px; margin-bottom:36px }
+.cover-sub strong{ color:#F2E8D8 }
+.cover-actions{ display:flex; flex-wrap:wrap; gap:12px }
+.btn{
+  display:inline-flex; align-items:center; gap:10px; padding:13px 20px;
+  font:700 12px "JetBrains Mono",monospace; letter-spacing:.03em; text-transform:uppercase;
+  text-decoration:none; border:2px solid currentColor; transition:transform .18s ease;
+}
+.btn:hover{ transform:translate(-2px,-2px) }
+.btn-solid{ background:#F2E8D8; color:#14100C; border-color:#F2E8D8; box-shadow:4px 4px 0 #FF6E3F }
+.btn-solid:hover{ box-shadow:6px 6px 0 #FF6E3F }
+.btn-line{ color:#F2E8D8; box-shadow:4px 4px 0 #7FB2CE }
+.btn-line:hover{ box-shadow:6px 6px 0 #7FB2CE }
+.cover-foot{ position:absolute; left:0; right:0; bottom:26px; display:flex; justify-content:space-between; padding:0 clamp(18px,4vw,48px); font:600 10px "JetBrains Mono",monospace; letter-spacing:.12em; color:#8B7F68; z-index:2 }
 
-```yaml
-Name: Navanitha Krishnan B
+/* ---------- profile (about) ---------- */
+.profile-grid{ display:grid; grid-template-columns:minmax(0,1.15fr) minmax(240px,340px); gap:40px; align-items:start }
+.profile-copy p{ font-size:15.5px; max-width:560px }
+.stat-sheet{
+  border:2px solid var(--line); background:var(--panel); padding:22px; position:relative; box-shadow:var(--shadow);
+}
+.stat-sheet::before{ content:"CHAR. FILE"; position:absolute; top:-11px; left:16px; background:var(--paper); padding:0 8px; font:700 10px "JetBrains Mono",monospace; letter-spacing:.1em; color:var(--red) }
+.stat-row{ display:flex; justify-content:space-between; gap:10px; padding:9px 0; border-bottom:1px solid var(--line); font-size:12.5px }
+.stat-row:last-child{ border-bottom:none }
+.stat-row dt{ color:var(--muted); font:600 10px "JetBrains Mono",monospace; text-transform:uppercase; letter-spacing:.05em }
+.stat-row dd{ margin:0; text-align:right; font-weight:600; max-width:60%; }
+.speech-bubble{
+  margin-top:20px; position:relative; border:2px solid var(--line); background:var(--paper);
+  padding:14px 16px; font-size:13px; font-style:italic; color:var(--muted);
+}
+.speech-bubble::after{
+  content:""; position:absolute; left:26px; bottom:-11px; width:16px; height:16px;
+  background:var(--paper); border-right:2px solid var(--line); border-bottom:2px solid var(--line);
+  transform:rotate(45deg);
+}
 
-Education:
-   - B.E Artificial Intelligence & Machine Learning
-   - Final-year student @ KGiSL Institute of Technology
+/* ---------- arsenal (skills) ---------- */
+.arsenal-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px }
+.arsenal-group{ border:2px solid var(--line); background:var(--panel); padding:18px }
+.arsenal-group h3{ font:700 12px "JetBrains Mono",monospace; text-transform:uppercase; letter-spacing:.06em; color:var(--teal); margin-bottom:12px }
+.chip-row{ display:flex; flex-wrap:wrap; gap:7px }
+.chip{ border:1.5px solid var(--line); padding:6px 10px; font:600 11.5px "JetBrains Mono",monospace }
 
-Current Focus:
-   - AI / Machine Learning
-   - Full Stack Development
-   - Data Structures & Algorithms
+/* ---------- missions (projects) ---------- */
+.mission-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px }
+.mission-card{
+  position:relative; border:2px solid var(--line); background:var(--panel);
+  padding:26px 22px 22px; overflow:hidden; box-shadow:var(--shadow);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.mission-card:hover{ transform:translate(-3px,-3px); box-shadow:7px 7px 0 var(--ink) }
+.mission-card .halftone{ opacity:.06 }
+.mission-num{
+  position:absolute; top:0; left:0; background:var(--ink); color:var(--paper);
+  font:700 10px "JetBrains Mono",monospace; padding:5px 10px; letter-spacing:.08em;
+}
+.mission-card h3{ font-size:26px; margin:20px 0 8px; position:relative; z-index:1 }
+.mission-card p{ font-size:13.5px; color:var(--muted); margin-bottom:16px; max-width:44ch; position:relative; z-index:1 }
+.mission-tags{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px; position:relative; z-index:1 }
+.mission-tags span{ border:1px solid var(--line); padding:3px 8px; font:600 10px "JetBrains Mono",monospace; color:var(--muted) }
+.mission-link{ display:inline-flex; align-items:center; gap:8px; text-decoration:none; font:700 11.5px "JetBrains Mono",monospace; text-transform:uppercase; color:var(--red); position:relative; z-index:1 }
+.mission-link:hover{ text-decoration:underline }
 
-Fun Fact:
-   - Anime + Coding + Coffee = Productivity ☕
-```
+.mission-card.featured{
+  grid-column:1 / -1; display:grid; grid-template-columns:1.25fr 1fr; gap:28px; align-items:start;
+  border-color:var(--red); box-shadow:6px 6px 0 var(--red);
+}
+.mission-card.featured:hover{ box-shadow:8px 8px 0 var(--red) }
+.mission-card.featured .mission-num{ background:var(--red); color:var(--paper) }
+.flagship-note{ font:700 10px "JetBrains Mono",monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--red); margin-bottom:6px; display:block }
+.company-links{ display:flex; flex-direction:column; gap:8px; position:relative; z-index:1 }
+.company-links a{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  border:1.5px solid var(--line); padding:9px 12px; text-decoration:none;
+  font:600 11px "JetBrains Mono",monospace; text-transform:uppercase;
+}
+.company-links a:hover{ background:var(--ink); color:var(--panel) }
+.company-links .soon{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  border:1.5px dashed var(--muted); padding:9px 12px;
+  font:600 11px "JetBrains Mono",monospace; text-transform:uppercase; color:var(--muted);
+}
+.practice-note{ color:var(--muted); font-size:13px; margin:-14px 0 26px }
 
----
+/* ---------- fandom / favorites ---------- */
+.fandom-row{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px }
+.fandom-chip{
+  border:2px solid var(--line); padding:9px 16px; font:700 12px "JetBrains Mono",monospace;
+  text-transform:uppercase; letter-spacing:.02em; background:var(--panel);
+}
+.fandom-chip:nth-child(3n+1){ border-color:var(--red); color:var(--red) }
+.fandom-chip:nth-child(3n+2){ border-color:var(--teal); color:var(--teal) }
+.fandom-chip:nth-child(3n){ border-color:var(--gold); color:var(--gold) }
+.tribute{ border:2px solid var(--line); background:var(--panel); padding:24px; position:relative; overflow:hidden; box-shadow:var(--shadow); margin-bottom:16px }
+.tribute .halftone{ opacity:.07 }
+.tribute-head{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; position:relative; z-index:1 }
+.tribute-head h3{ margin:0; font-size:22px }
+.power-badge{
+  display:inline-flex; align-items:center; gap:8px; border:2px solid var(--red); color:var(--red);
+  padding:7px 13px; font:800 12px "JetBrains Mono",monospace; letter-spacing:.04em; white-space:nowrap;
+}
+.db-row{ display:flex; gap:10px; margin:18px 0 6px; flex-wrap:wrap; position:relative; z-index:1 }
+.db-ball{
+  width:36px; height:36px; border-radius:50%; border:2px solid var(--line);
+  background:radial-gradient(circle at 32% 26%, #FFE1A0, #FF9A1E 55%, #D9660B 100%);
+  display:grid; place-items:center; font:700 12px "JetBrains Mono",monospace; color:#5C2E00;
+  box-shadow:inset -2px -2px 5px rgba(0,0,0,.28);
+}
+.tribute p.lede{ margin:14px 0 0; position:relative; z-index:1 }
 
-# 🎌 What I'm About
+/* ---------- transmission (contact) ---------- */
+#transmission{ padding-bottom:100px }
+.contact-panel{
+  border:2px solid var(--line); background:var(--panel); padding:clamp(28px,5vw,54px);
+  display:grid; grid-template-columns:minmax(0,1fr) auto; gap:32px; align-items:center; box-shadow:var(--shadow);
+}
+.contact-panel h2{ font-size:clamp(32px,5vw,52px); line-height:.95; margin-bottom:14px }
+.contact-panel p{ color:var(--muted); max-width:44ch; margin-bottom:0; font-size:14.5px }
+.contact-links{ display:flex; flex-direction:column; gap:10px }
+.contact-links a{
+  display:flex; align-items:center; justify-content:space-between; gap:22px;
+  border:2px solid var(--line); padding:12px 16px; text-decoration:none;
+  font:700 12px "JetBrains Mono",monospace; text-transform:uppercase; min-width:230px;
+}
+.contact-links a:hover{ background:var(--ink); color:var(--paper) }
+.contact-links a span{ opacity:.6 }
 
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=26&pause=1000&color=FF6F3C&center=true&vCenter=true&width=800&lines=AI+%26+ML+Engineer;Anime+Lover;Full+Stack+Learner;Python+%7C+Flask+%7C+React;Building+Cool+Projects;Never+Stop+Learning+%E2%9C%A8"/>
-</p>
+footer{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  padding:20px clamp(18px,4vw,48px) 30px; border-top:2px solid var(--line);
+  font:600 10px "JetBrains Mono",monospace; letter-spacing:.08em; color:var(--muted); text-transform:uppercase;
+}
 
----
+@media(max-width:860px){
+  .chapters{ display:none }
+  .menu-btn{ display:block }
+  .chapters.is-open{ display:flex; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:var(--paper); border-bottom:2px solid var(--line); padding:8px }
+  .profile-grid{ grid-template-columns:1fr }
+  .mission-grid{ grid-template-columns:1fr }
+  .mission-card.featured{ grid-template-columns:1fr }
+  .contact-panel{ grid-template-columns:1fr }
+}
+@media(prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto }
+  *{ transition:none !important; animation:none !important }
+}
+</style>
+</head>
+<body>
 
-# ⚡ Tech Arsenal
+<header class="masthead">
+  <a class="brand" href="#cover">
+    <span class="brand-mark">NK</span>
+    <span class="brand-name">navanitha.krishnan</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="chapters"><span></span><span></span><span></span></button>
+  <ul class="chapters" id="chapters">
+    <li><a href="#profile">Ch.01 Profile</a></li>
+    <li><a href="#arsenal">Ch.02 Arsenal</a></li>
+    <li><a href="#missions">Ch.03 Missions</a></li>
+    <li><a href="#fandom">Ch.04 Fandom</a></li>
+    <li><a href="#transmission">Ch.05 Signal</a></li>
+  </ul>
+</header>
 
-<p align="center">
-<img src="https://skillicons.dev/icons?i=python,cpp,java,html,css,js,react,flask,mysql,docker,git,github,linux,vscode"/>
-</p>
+<main>
+  <section id="cover">
+    <svg class="speedlines" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#FF6E3F" stroke-width="1.4" opacity=".5">
+        <line x1="1180" y1="60" x2="740" y2="180"/><line x1="1180" y1="120" x2="700" y2="230"/>
+        <line x1="1180" y1="180" x2="670" y2="290"/><line x1="1180" y1="240" x2="660" y2="360"/>
+        <line x1="1180" y1="300" x2="670" y2="430"/><line x1="1180" y1="360" x2="700" y2="490"/>
+        <line x1="1180" y1="420" x2="740" y2="540"/>
+      </g>
+      <g stroke="#7FB2CE" stroke-width="1" opacity=".3">
+        <line x1="0" y1="820" x2="420" y2="760"/><line x1="0" y1="860" x2="460" y2="790"/>
+        <line x1="0" y1="900" x2="500" y2="820"/>
+      </g>
+    </svg>
+    <div class="inner">
+      <p class="cover-kicker mono">VOL. 01 &middot; ORIGIN STORY</p>
+      <h1 class="cover-title display">
+        <span>NAVANITHA</span><span>KRISHNAN&nbsp;B</span>
+      </h1>
+      <p class="cover-sub">AI/ML engineer in training and full-stack builder — <strong>final-year B.E. AI &amp; ML</strong> at KGiSL Institute of Technology. Ships side projects between anime arcs and coffee refills.</p>
+      <div class="cover-actions">
+        <a class="btn btn-solid" href="#missions">Read the missions ↗</a>
+        <a class="btn btn-line" href="#transmission">Open a channel ↗</a>
+      </div>
+    </div>
+    <div class="cover-foot mono">
+      <span>KGiSL INSTITUTE OF TECHNOLOGY</span>
+      <span>B.E. AI &amp; ML / FINAL YEAR</span>
+    </div>
+  </section>
 
----
+  <section id="profile">
+    <div class="tab"><b>Ch.01</b> Character Profile</div>
+    <h2 class="section-title">The human <span class="accent">behind the commits.</span></h2>
+    <div class="profile-grid">
+      <div class="profile-copy">
+        <p class="lede">I like the stretch of a problem between "I have no idea how this works" and shipping something that actually runs — whether that's a model, a pipeline, or a page.</p>
+        <p>I'm a final-year B.E. Artificial Intelligence &amp; Machine Learning student at KGiSL Institute of Technology, currently splitting my time between AI/ML coursework, full-stack builds, and steady DSA practice. Outside of that, I'm slowly building toward a future company — an animation studio that will eventually ship its own IDE.</p>
+        <p>Also: certified in never starting a coding session without coffee, and running theory threads on whatever anime arc is currently airing.</p>
+      </div>
+      <div class="stat-sheet">
+        <dl>
+          <div class="stat-row"><dt>Class</dt><dd>AI/ML Engineer</dd></div>
+          <div class="stat-row"><dt>Level</dt><dd>Final-Year Student</dd></div>
+          <div class="stat-row"><dt>Guild</dt><dd>KGiSL Institute of Tech</dd></div>
+          <div class="stat-row"><dt>Focus</dt><dd>AI/ML &middot; Full Stack &middot; DSA</dd></div>
+          <div class="stat-row"><dt>Buff</dt><dd>Coffee (+3 focus)</dd></div>
+        </dl>
+        <div class="speech-bubble">"Anime + Coding + Coffee = Productivity."</div>
+      </div>
+    </div>
+  </section>
 
-# 📊 GitHub Statistics
+  <section id="arsenal">
+    <div class="tab"><b>Ch.02</b> Equipment</div>
+    <h2 class="section-title">Tools are <span class="accent">amplifiers.</span></h2>
+    <p class="lede" style="margin-bottom:34px">The loadout follows the problem — here's what's currently equipped.</p>
+    <div class="arsenal-grid">
+      <div class="arsenal-group">
+        <h3>Languages</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">C++</span><span class="chip">Java</span><span class="chip">JavaScript</span>
+        </div>
+      </div>
+      <div class="arsenal-group">
+        <h3>Web &amp; Frameworks</h3>
+        <div class="chip-row">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">React</span><span class="chip">Flask</span>
+        </div>
+      </div>
+      <div class="arsenal-group">
+        <h3>Data &amp; Infra</h3>
+        <div class="chip-row">
+          <span class="chip">MySQL</span><span class="chip">Docker</span><span class="chip">Linux</span><span class="chip">Git &amp; GitHub</span>
+        </div>
+      </div>
+      <div class="arsenal-group">
+        <h3>Workshop</h3>
+        <div class="chip-row">
+          <span class="chip">VS Code</span><span class="chip">AI / ML</span><span class="chip">DSA</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=navanithakrishnanb4-pixel&show_icons=true&theme=tokyonight&hide_border=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=navanithakrishnanb4-pixel&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
+  <section id="missions">
+    <div class="tab"><b>Ch.03</b> Mission Log</div>
+    <h2 class="section-title">Things I'm <span class="accent">building.</span></h2>
+    <p class="lede" style="margin-bottom:34px">One flagship. A few practice arcs alongside it.</p>
+    <div class="mission-grid">
+      <article class="mission-card featured">
+        <div class="halftone"></div>
+        <span class="mission-num">MISSION 01</span>
+        <div>
+          <span class="flagship-note">★ Flagship — my company</span>
+          <h3>Nexonic Anime</h3>
+          <p>The founding project — a future animation studio that will eventually ship its own IDE. Everything else here is practice terrain by comparison.</p>
+          <div class="mission-tags"><span>Company</span><span>Web</span><span>Long-Term</span></div>
+          <a class="mission-link" href="https://github.com/navanithakrishnanb4-pixel/nexonic.anime" target="_blank" rel="noreferrer">Repository ↗</a>
+        </div>
+        <div class="company-links">
+          <span class="soon">Company site <span>launching soon</span></span>
+          <a href="https://docs.google.com/forms/d/1treil56VWFgkyw7EaUZ7m8ZcICRQjnWdxesnCTcP5Qw" target="_blank" rel="noreferrer">Application form <span>↗</span></a>
+          <a href="https://www.instagram.com/nexonic.anime" target="_blank" rel="noreferrer">@nexonic.anime <span>↗</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="practice-note">Practice arcs — smaller, temporary builds for learning and experimenting:</p>
+    <div class="mission-grid">
+      <article class="mission-card">
+        <div class="halftone"></div>
+        <span class="mission-num">02</span>
+        <h3>OOHHII</h3>
+        <p>An occupational health (OHI) and worker health platform, built to support wellbeing tracking on the job.</p>
+        <div class="mission-tags"><span>Health Tech</span><span>Practice Arc</span></div>
+        <a class="mission-link" href="https://github.com/navanithakrishnanb4-pixel/OOHHII" target="_blank" rel="noreferrer">Repository ↗</a>
+      </article>
+      <article class="mission-card">
+        <div class="halftone"></div>
+        <span class="mission-num">03</span>
+        <h3>Nexus AI</h3>
+        <p>An AI router built as a sample mini project — directing requests to the right model for the job.</p>
+        <div class="mission-tags"><span>AI / ML</span><span>Practice Arc</span></div>
+        <a class="mission-link" href="https://github.com/navanithakrishnanb4-pixel/nexus-ai" target="_blank" rel="noreferrer">Repository ↗</a>
+      </article>
+      <article class="mission-card">
+        <div class="halftone"></div>
+        <span class="mission-num">04</span>
+        <h3>VibeForge</h3>
+        <p>A full-stack, AI-powered code generator for ML pipelines, embedded systems, and robotics.</p>
+        <div class="mission-tags"><span>Full Stack</span><span>Practice Arc</span></div>
+        <a class="mission-link" href="https://github.com/navanithakrishnanb4-pixel/vibeforge" target="_blank" rel="noreferrer">Repository ↗</a>
+      </article>
+    </div>
+  </section>
 
----
+  <section id="fandom">
+    <div class="tab"><b>Ch.04</b> Fandom Shelf</div>
+    <h2 class="section-title">Currently <span class="accent">rewatching.</span></h2>
 
-# 🔥 GitHub Streak
+    <div class="tribute">
+      <div class="halftone"></div>
+      <div class="tribute-head">
+        <h3>Dragon Ball — the one that started it</h3>
+        <span class="power-badge">POWER LEVEL: OVER 9000</span>
+      </div>
+      <p class="lede">Top of the fandom shelf, no contest. The training-arc mindset — small reps, steady grind, occasional transformation — is basically how I approach every new skill.</p>
+      <div class="db-row" aria-hidden="true">
+        <span class="db-ball">1</span><span class="db-ball">2</span><span class="db-ball">3</span>
+        <span class="db-ball">4</span><span class="db-ball">5</span><span class="db-ball">6</span><span class="db-ball">7</span>
+      </div>
+    </div>
 
-<p align="center">
-<img src="https://streak-stats.demolab.com?user=navanithakrishnanb4-pixel&theme=tokyonight&hide_border=true"/>
-</p>
+    <div class="fandom-row">
+      <span class="fandom-chip">Dragon Ball</span>
+      <span class="fandom-chip">Naruto</span>
+      <span class="fandom-chip">One Piece</span>
+      <span class="fandom-chip">Demon Slayer</span>
+      <span class="fandom-chip">Jujutsu Kaisen</span>
+      <span class="fandom-chip">Attack on Titan</span>
+    </div>
+  </section>
 
----
+  <section id="transmission">
+    <div class="tab"><b>Ch.05</b> Send Signal</div>
+    <div class="contact-panel">
+      <div>
+        <h2 class="display">Let's build<br /><span class="accent">something worth shipping.</span></h2>
+        <p>Open to internships, collaborations, or a good conversation about AI, full-stack builds, or whatever anime arc you're currently on.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:navanithakrishnanb4@gmail.com">Email <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/navanitha-krishnan-329b77377" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        <a href="https://github.com/navanithakrishnanb4-pixel" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        <a href="https://www.kaggle.com/navanithakrishnanb" target="_blank" rel="noreferrer">Kaggle <span>↗</span></a>
+        <a href="https://www.instagram.com/navito._.kun" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
 
-# 🏆 GitHub Trophies
+<footer>
+  <span>&copy; 2026 Navanitha Krishnan B</span>
+  <span>LEARN &middot; BUILD &middot; SHIP &middot; REPEAT</span>
+  <span>TO BE CONTINUED &middot; VOL. 02 SOON</span>
+</footer>
 
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=navanithakrishnanb4-pixel&theme=tokyonight&column=4&margin-w=15&margin-h=15"/>
-</p>
-
----
-
-# 🌸 Favorite Anime
-
-<p align="center">
-<img src="https://img.shields.io/badge/⭐_Dragon_Ball-FF9A3C?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Naruto-orange?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/One_Piece-red?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Demon_Slayer-pink?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Jujutsu_Kaisen-blue?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Attack_on_Titan-brown?style=for-the-badge"/>
-</p>
-
----
-
-# 🌐 Connect With Me
-
-<p align="center">
-<a href="https://linkedin.com/in/navanitha-krishnan-329b77377">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="mailto:[email protected]">
-<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<a href="https://github.com/navanithakrishnanb4-pixel">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
-</a>
-</p>
-
----
-
-# 👀 Visitors
-
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=navanithakrishnanb4-pixel&style=for-the-badge&color=ff6f3c"/>
-</p>
-
----
-
-<p align="center">
-
-### ✨ Thanks for visiting my profile! ✨
-
-<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=gradient"/>
-
-</p>
+<script>
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('chapters');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  var links = document.querySelectorAll('.chapters a');
+  links.forEach(function(link){
+    link.addEventListener('click', function(){
+      nav.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  try{
+    var sections = document.querySelectorAll('section[id]');
+    var byId = {};
+    links.forEach(function(l){ byId[l.getAttribute('href').slice(1)] = l; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          links.forEach(function(l){ l.classList.remove('is-current'); });
+          var l = byId[entry.target.id];
+          if(l) l.classList.add('is-current');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function(s){ io.observe(s); });
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
