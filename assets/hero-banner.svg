@@ -1,0 +1,43 @@
+<svg width="900" height="230" viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ball" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FFE1A0"/>
+      <stop offset="55%" stop-color="#FF9A1E"/>
+      <stop offset="100%" stop-color="#D9660B"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="230" fill="#18130F"/>
+
+  <g stroke="#FF6E3F" stroke-width="1.4" opacity="0.45">
+    <line x1="900" y1="10" x2="640" y2="80"/>
+    <line x1="900" y1="35" x2="610" y2="100"/>
+    <line x1="900" y1="60" x2="590" y2="125"/>
+    <line x1="900" y1="85" x2="580" y2="150"/>
+    <line x1="900" y1="110" x2="590" y2="175"/>
+    <animate attributeName="opacity" values="0.3;0.55;0.3" dur="3.4s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="46" y="52" font-family="Courier New, monospace" font-size="14" font-weight="700" letter-spacing="3" fill="#FF6E3F">VOL. 01 &#183; ORIGIN STORY</text>
+
+  <g>
+    <text x="44" y="118" font-family="Arial Black, Arial, sans-serif" font-size="56" font-weight="900" letter-spacing="1" fill="#F2E8D8">NAVANITHA</text>
+    <text x="44" y="176" font-family="Arial Black, Arial, sans-serif" font-size="56" font-weight="900" letter-spacing="1" fill="#F2E8D8">KRISHNAN B</text>
+  </g>
+
+  <text x="48" y="205" font-family="Courier New, monospace" font-size="13" fill="#D8CBB2">AI/ML Engineer &#215; Full-Stack Builder &#215; Dragon Ball Enthusiast</text>
+
+  <g filter="url(#glow)">
+    <circle cx="838" cy="52" r="22" fill="url(#ball)" stroke="#18130F" stroke-width="2">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="838" y="57" font-family="Courier New, monospace" font-size="12" font-weight="700" fill="#5C2E00" text-anchor="middle">7</text>
+</svg>
