@@ -142,6 +142,17 @@ p.lede{ max-width:600px; color:var(--muted); font-size:15px }
 .chip-row{ display:flex; flex-wrap:wrap; gap:7px }
 .chip{ border:1.5px solid var(--line); padding:6px 10px; font:600 11.5px "JetBrains Mono",monospace }
 
+/* ---------- field data (github stats) ---------- */
+.stats-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-bottom:16px }
+.stats-panel{
+  border:2px solid var(--line); background:var(--panel); padding:18px; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:12px;
+}
+.stats-panel h3{ font:700 11px "JetBrains Mono",monospace; text-transform:uppercase; letter-spacing:.06em; color:var(--teal); margin:0 }
+.stats-panel img{ width:100%; height:auto; border-radius:0 }
+.stats-panel.wide{ grid-column:1 / -1 }
+.stats-panel.wide img{ max-width:100%; width:auto; margin:0 auto }
+
 /* ---------- missions (projects) ---------- */
 .mission-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px }
 .mission-card{
@@ -258,9 +269,10 @@ footer{
   <ul class="chapters" id="chapters">
     <li><a href="#profile">Ch.01 Profile</a></li>
     <li><a href="#arsenal">Ch.02 Arsenal</a></li>
-    <li><a href="#missions">Ch.03 Missions</a></li>
-    <li><a href="#fandom">Ch.04 Fandom</a></li>
-    <li><a href="#transmission">Ch.05 Signal</a></li>
+    <li><a href="#stats">Ch.03 Field Data</a></li>
+    <li><a href="#missions">Ch.04 Missions</a></li>
+    <li><a href="#fandom">Ch.05 Fandom</a></li>
+    <li><a href="#transmission">Ch.06 Signal</a></li>
   </ul>
 </header>
 
@@ -349,8 +361,44 @@ footer{
     </div>
   </section>
 
+  <section id="stats">
+    <div class="tab"><b>Ch.03</b> Field Data</div>
+    <h2 class="section-title">Numbers <span class="accent">don't lie.</span></h2>
+    <p class="lede" style="margin-bottom:34px">Live readouts, pulled straight from GitHub.</p>
+    <div class="stats-grid">
+      <div class="stats-panel">
+        <h3>Overview</h3>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=navanithakrishnanb4-pixel&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
+          <img src="https://github-readme-stats.vercel.app/api?username=navanithakrishnanb4-pixel&show_icons=true&theme=default&hide_border=true&bg_color=00000000" alt="Navanitha's GitHub stats" loading="lazy" />
+        </picture>
+      </div>
+      <div class="stats-panel">
+        <h3>Top Languages</h3>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=navanithakrishnanb4-pixel&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=navanithakrishnanb4-pixel&layout=compact&theme=default&hide_border=true&bg_color=00000000" alt="Top languages" loading="lazy" />
+        </picture>
+      </div>
+      <div class="stats-panel wide">
+        <h3>Streak</h3>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=navanithakrishnanb4-pixel&theme=tokyonight&hide_border=true&background=00000000" />
+          <img src="https://streak-stats.demolab.com?user=navanithakrishnanb4-pixel&theme=default&hide_border=true&background=00000000" alt="GitHub streak" loading="lazy" />
+        </picture>
+      </div>
+      <div class="stats-panel wide">
+        <h3>Trophies</h3>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=navanithakrishnanb4-pixel&theme=tokyonight&column=4&margin-w=12&margin-h=12&no-bg=true" />
+          <img src="https://github-profile-trophy.vercel.app/?username=navanithakrishnanb4-pixel&theme=flat&column=4&margin-w=12&margin-h=12&no-bg=true" alt="GitHub trophies" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
   <section id="missions">
-    <div class="tab"><b>Ch.03</b> Mission Log</div>
+    <div class="tab"><b>Ch.04</b> Mission Log</div>
     <h2 class="section-title">Things I'm <span class="accent">building.</span></h2>
     <p class="lede" style="margin-bottom:34px">One flagship. A few practice arcs alongside it.</p>
     <div class="mission-grid">
@@ -401,7 +449,7 @@ footer{
   </section>
 
   <section id="fandom">
-    <div class="tab"><b>Ch.04</b> Fandom Shelf</div>
+    <div class="tab"><b>Ch.05</b> Fandom Shelf</div>
     <h2 class="section-title">Currently <span class="accent">rewatching.</span></h2>
 
     <div class="tribute">
@@ -428,7 +476,7 @@ footer{
   </section>
 
   <section id="transmission">
-    <div class="tab"><b>Ch.05</b> Send Signal</div>
+    <div class="tab"><b>Ch.06</b> Send Signal</div>
     <div class="contact-panel">
       <div>
         <h2 class="display">Let's build<br /><span class="accent">something worth shipping.</span></h2>
